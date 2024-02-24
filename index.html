@@ -186,7 +186,7 @@
                     </div>
 
                     <div class="flex justify-between font-bold gap-20 pt-8">
-                        <p id="seat-sec">Seat <span class="bg-green-500 rounded-full">0</span></p>
+                        <p id="seat-sec">Seat <span id="add-seat" class="bg-green-500 rounded-full">0</span></p>
                         <p id="class-sec">Class</p>
                         <p id="price-sec">Price</p>
                     </div>
@@ -207,13 +207,13 @@
 
                     <div class="flex justify-between pt-8 font-bold">
                         <h2>Tota Price</h2>
-                        <h2>BDT <span>0</span></h2>
+                        <h2>BDT <span id="total-cost">0</span></h2>
                     </div>
 
                     <div class="pt-8">
                         <label class="input input-bordered flex items-center gap-2">
                             <input id="coupon-code" type="text" class="grow" placeholder="Have any copupon" />
-                            <span id="apply-btn"
+                            <span onclick="allGrandTotal('apply-btn')" id="apply-btn"
                                 class="badge badge-success py-4 px-4 text-white cursor-pointer">Apply</span>
                         </label>
                     </div>
@@ -221,7 +221,7 @@
 
                     <div class="flex justify-between pt-8 font-bold">
                         <h2>Grand Total</h2>
-                        <h2>BDT 0</h2>
+                        <h2>BDT <span id="grand-total">0</span></h2>
                     </div>
 
                     <div class="pt-8">
